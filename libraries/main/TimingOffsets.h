@@ -3,7 +3,7 @@
 
 // all times are recorded in units of ms
 // the offsets define when tasks happen within a loop period
-#define LOOP_PERIOD 99
+#define LOOP_PERIOD 99 // I think main loop runs 99 ms, TO DO: determine how quickly to sample data with the ADC, IMU, etc.
 #define PRINTER_LOOP_OFFSET 0
 #define IMU_LOOP_OFFSET 10
 #define GPS_LOOP_OFFSET 20
