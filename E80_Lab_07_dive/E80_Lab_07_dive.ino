@@ -117,7 +117,6 @@ void loop() {
     printer.printValue(8,motor_driver.printState());
     printer.printValue(9,imu.printRollPitchHeading());        
     printer.printValue(10,imu.printAccels());
-    printer.printValue(11,z_state_estimator.updateState()); //CHECK THIS Add a line showing your current pressure measurement to your robot’s serial report.
     printer.printToSerial();  // To stop printing, just comment this line out
   }
 
