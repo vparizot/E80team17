@@ -32,7 +32,7 @@ void DepthControl::dive(z_state_t * state, int currentTime_in) {
 
   depth_des = wayPoints[currentWayPoint]; // desired depth
   depth = state->z; // current depth
-  depth_error = depth - depth_dez; // current error in depth- CHANGE SIGN IF NEEDED?
+  depth_error =  depth_dez - depth; // current error in depth- CHANGE SIGN IF NEEDED?
   uV = Kp*depth_error; // vertical motor control effort. Change Kp in DepthControl.h
   
   if (uV > 200) { // effort bounded to +/- 200; change up to +/- 250 if needed
