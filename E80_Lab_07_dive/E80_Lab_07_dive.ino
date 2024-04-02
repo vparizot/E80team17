@@ -95,7 +95,7 @@ void setup() {
   depth_control.lastExecutionTime      = loopStartTime - LOOP_PERIOD + DEPTH_CONTROL_LOOP_OFFSET;
   logger.lastExecutionTime             = loopStartTime - LOOP_PERIOD + LOGGER_LOOP_OFFSET;
     
-  delay 10000; // delay for setup
+  delay 100000; // delay for setup
 }
 
 
